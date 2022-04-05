@@ -6,10 +6,11 @@
 let puedesPasar = true;
 edad = 17;
 
-if (edad >= 18) {
-    let puedesPasar = false;
+if (edad < 18) {
+    puedesPasar = false;
 }
 
 console.log(puedesPasar) // false
 
 // PREGUNTA: ¿Por qué no se actualiza correctamente la variable 'puedesPasar'?
+// Porque esta variable ya esta declarada, no se puede volver a declarar

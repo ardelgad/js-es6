@@ -7,15 +7,16 @@ function tempMinMax() {
 }
 
 let temp = tempMinMax();
-let tempMin = temp[0];
-let tempMax = temp[1];
+//let tempMin = temp[0];
+//let tempMax = temp[1];
 
-console.log(tempMin, tempMax); // Funciona, forma ES5
+//console.log(tempMin, tempMax); // Funciona, forma ES5
 
 // Reescribe el código de arriba usando ES6
+let [tempDestructMin, tempDestructMax] = temp;
 
 // TODO: Usa el operador de destrcturación para asignar el valor de la primera posición del array a tempDestructMin, y la segunda posición del array a tempDesustructMax
 
-// console.log(tempDestructMin, tempDestructMax) // -1 20
+console.log(tempDestructMin, tempDestructMax); // -1 20
 
 
